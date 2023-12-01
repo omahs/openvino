@@ -11,7 +11,7 @@ Setting Input Shapes
 ``openvino.convert_model`` supports conversion of models with dynamic input shapes that
 contain undefined dimensions. However, if the shape of data is not going to change from
 one inference request to another, it is recommended to **set up static shapes**
-(all dimensions are fully defined) for the inputs, using the the ``input`` parameter.
+(all dimensions are fully defined) for the inputs, using the ``input`` parameter.
 Doing so at the model preparation stage, not at runtime, can be beneficial in terms of
 performance and memory consumption.
 
